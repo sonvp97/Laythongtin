@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .th1 {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+<h1>Market Research Survey</h1>
+<p>Please take a few moments to complete this satisfaction survey</p>
+<h3>What is your age range?</h3>
+<select id="tuoi">
+  <option value="18-24">18-24</option>
+  <option value="25-34">25-34</option>
+  <option value="35-50">35-50</option>
+  <option value="50+">50+</option>
+</select><br>
+<h3>What is your yearly income range?</h3>
+<select id="thunhap">
+  <option value="0-25000">$0 - $25,000</option>
+  <option value="25001-50000">$25,001 - $50,000</option>
+  <option value="50001-100000">$50,001 - $100,000</option>
+  <option value="100001+">$100,001+</option>
+</select><br>
+<h3>Gender Identity</h3>
+<input type="radio" name="male"><label>Male</label><br>
+<input type="radio" name="female"><label>Female</label><br>
+<input type="radio" name="nonbinary"><label>Nonbinary</label><br>
+<input type="radio" name="Other"><label>Other</label><br>
+<input type="text" name="Khac" >
+<p>Maximum of 250 characters.<i>CurrentlyUsed:</i><strong>0</strong> <i>character.</i></p>
+<br>
+<h3>Which of the following products have your purchased in the last 2 months. Please check all that apply.</h3>
+<br>
+<input type="checkbox" name="P1"><label> Product 1</label><br>
+<input type="checkbox" name="P2"><label> Product 2</label><br>
+<input type="checkbox" name="P3"><label> Product 3</label><br>
+<h3>How often would you use our new product?</h3><br>
+<input type="radio" name="Daily"><label>Daily</label><br>
+<input type="radio" name="Weekly"><label>Weekly</label><br>
+<input type="radio" name="Monthly"><label>Monthly</label><br>
+<h3>What would you pay for the new product?</h3><br>
+<label>$</label><input type="text" name="Dollars"><label>.</label><input type="text" name="Cents"><br>
+<label>Dollars</label><label>Cents</label>
+<h3>What features would you like to see in the new product.</h3><br>
+<textarea name="noidung" cols="100" rows="5"></textarea><br>
+<p>Please rate your level of agreement with the following statements.</p>
+<table border="1">
+    <tr>
+        <th></th>
+        <th>Strongly Disagree</th>
+        <th>Disagree</th>
+        <th>Agree</th>
+        <th>Strongly Agree</th>
+    </tr>
+    <tr>
+        <th class="th1">Our products are priced fairly.</th>
+        <th><input type="radio" name="Strongly Disagree"><br><label>1</label></th>
+        <th><input type="radio" name="Disagree"><br><label>2</label></th>
+        <th><input type="radio" name="Agree"><br><label>3</label></th>
+        <th><input type="radio" name="Strongly Agree"><br><label>4</label></th>
+    </tr>
+    <tr>
+        <th class="th1">Our products are high quality.</th>
+        <th><input type="radio" name="Strongly Disagree"><br><label>1</label></th>
+        <th><input type="radio" name="Disagree"><br><label>2</label></th>
+        <th><input type="radio" name="Agree"><br><label>3</label></th>
+        <th><input type="radio" name="Strongly Agree"><br><label>4</label></th>
+    </tr>
+    <tr>
+        <th class="th1">You would recommend our product to a friend or coworker.</th>
+        <th><input type="radio" name="Strongly Disagree"><br><label>1</label></th>
+        <th><input type="radio" name="Disagree"><br><label>2</label></th>
+        <th><input type="radio" name="Agree"><br><label>3</label></th>
+        <th><input type="radio" name="Strongly Agree"><br><label>4</label></th>
+    </tr>
+</table>
+<button type="button">Submit</button>
+
+
+
+</body>
+</html>
